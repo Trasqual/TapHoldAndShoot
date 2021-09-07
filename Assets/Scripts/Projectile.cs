@@ -25,15 +25,9 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         if (!hasHit)
+        {
             transform.forward = rb.velocity;
-    }
-
-    private void TrackMovement()
-    {
-        Vector3 direction = rb.velocity;
-
-        float angle = Mathf.Atan2(direction.y, direction.z) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.right);
+        }
     }
 
     private void StickToTarget(Transform target)
