@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Shooter : MonoBehaviour
@@ -29,14 +27,14 @@ public class Shooter : MonoBehaviour
         var newZ = Mathf.Lerp(1f, maxZ, lerpAmount);
         shootVector.y = newY;
         shootVector.z = newZ;
-        trajectory.DrawTrajectory(shootVector * shootPower);
+        trajectory.DrawTrajectory(transform.TransformVector(shootVector) * shootPower);
     }
 
     public void Shoot()
     {
         var shotObject = Instantiate(objectToShoot, transform.position, Quaternion.identity,null);
         var shotRb = shotObject.GetComponent<Rigidbody>();
-        shotRb.velocity = shootVector * shootPower;
+        shotRb.velocity = transform.TransformVector(shootVector) * shootPower;
         shootVector = Vector3.zero;
         trajectory.ResetTrajectory();
         lerpAmount = 0f;
