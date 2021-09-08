@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9022686259464942035}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ProjectileModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 6633010777736718419}
   - component: {fileID: 4153909577288170289}
   - component: {fileID: 4243330393109391037}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 5138304237180991648}
   - component: {fileID: 7702997698730630180}
   - component: {fileID: 8241733749932030073}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 8877244738736228692}
   - component: {fileID: 62579227476753862}
   - component: {fileID: 4157546991236735550}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
