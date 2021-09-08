@@ -23,8 +23,8 @@ public class Shooter : MonoBehaviour
     public void Aim()
     {
         lerpAmount += Time.deltaTime * aimSpeed;
-        var newY = Mathf.Lerp(1f, maxY, lerpAmount);
-        var newZ = Mathf.Lerp(1f, maxZ, lerpAmount);
+        var newY = Mathf.Lerp(2f, maxY, lerpAmount);
+        var newZ = Mathf.Lerp(2f, maxZ, lerpAmount);
         shootVector.y = newY;
         shootVector.z = newZ;
         trajectory.DrawTrajectory(transform.TransformVector(shootVector) * shootPower);

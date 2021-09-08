@@ -20,6 +20,15 @@ public class PlayerInput : MonoBehaviour
             {
                 shooter.Aim();
             }
+            autoShootTimer -= Time.deltaTime;
+            if(autoShootTimer <= 0)
+            {
+                foreach (Shooter shooter in shooters)
+                {
+                    shooter.Shoot();
+                }
+                autoShootTimer = 2f;
+            }
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -28,6 +37,7 @@ public class PlayerInput : MonoBehaviour
             {
                 shooter.Shoot();
             }
+            autoShootTimer = 2f;
         }
     }
 }
