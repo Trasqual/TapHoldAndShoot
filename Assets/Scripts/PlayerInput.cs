@@ -2,54 +2,32 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] float maxY = 5f;
-    [SerializeField] float maxZ = 8f;
-    [SerializeField] float aimSpeed = 10f;
+
     [SerializeField] float autoShootTimer = 2f;
-    [SerializeField] float shootPower = 2f;
 
-    [SerializeField] Shooter shooter;
-    [SerializeField] ShootTrajectory trajectory;
+    Shooter[] shooters;
 
-    private Vector3 shootVector;
-
-
+    private void Start()
+    {
+        shooters = GetComponentsInChildren<Shooter>();
+    }
 
     private void Update()
     {
         if (Input.GetMouseButton(0))
         {
-            IncreaseShootVector();
+            foreach(Shooter shooter in shooters)
+            {
+                shooter.Aim();
+            }
         }
 
-        if (Input.GetMouseButtonUp(0) || IsAutoShootTimerUp())
+        if (Input.GetMouseButtonUp(0))
         {
-            shooter.Shoot(shootVector, shootPower);
-            shootVector = Vector3.zero;
-            trajectory.ResetTrajectory();
+            foreach (Shooter shooter in shooters)
+            {
+                shooter.Shoot();
+            }
         }
-    }
-
-    private void IncreaseShootVector()
-    {
-        shootVector.y = Mathf.Lerp(shootVector.y, maxY, Time.deltaTime * aimSpeed);
-        shootVector.z = Mathf.Lerp(shootVector.z, maxZ, Time.deltaTime * aimSpeed);
-        trajectory.DrawTrajectory(shootVector * shootPower);
-    }
-
-    private bool IsAutoShootTimerUp()
-    {
-        if(shootVector.y >= maxY && shootVector.z >= maxZ)
-        {
-            autoShootTimer -= Time.deltaTime;
-        }
-
-        if(autoShootTimer <= 0)
-        {
-            autoShootTimer = 3f;
-            return true;
-        }
-
-        return false;
     }
 }

@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
 
     private bool hasHit;
 
+    GameObject anchor;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,7 +28,13 @@ public class Projectile : MonoBehaviour
     {
         if (!hasHit)
         {
+            if(rb.velocity != Vector3.zero)
             transform.forward = rb.velocity;
+        }
+        else
+        {
+            transform.position = anchor.transform.position;
+            transform.rotation = anchor.transform.rotation;
         }
     }
 
@@ -34,6 +42,8 @@ public class Projectile : MonoBehaviour
     {
         rb.isKinematic = true;
         collider.enabled = false;
-        transform.parent = target;
+        anchor = new GameObject("Anchor");
+        anchor.transform.SetPositionAndRotation(transform.position, transform.rotation);
+        anchor.transform.SetParent(target);
     }
 }
