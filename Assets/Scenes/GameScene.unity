@@ -401,6 +401,90 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 506812383, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryDetail
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 506812383, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryLenght
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 506812384, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: aimSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 523212393, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryDetail
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 523212393, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryLenght
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 523212394, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: aimSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 981776923, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryDetail
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 981776923, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryLenght
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 981776924, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: aimSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702186883, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryDetail
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702186883, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryLenght
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702186884, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: aimSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736793756, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: aimSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736793758, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryDetail
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736793758, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryLenght
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041004788, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryDetail
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041004788, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryLenght
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041004789, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: aimSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049218931, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryDetail
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049218931, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryLenght
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049218932, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: aimSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6438624852136247305, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
       propertyPath: m_RootOrder
       value: 3
