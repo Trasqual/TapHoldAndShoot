@@ -256,7 +256,7 @@ LineRenderer:
       m_NumAlphaKeys: 4
     numCornerVertices: 0
     numCapVertices: 0
-    alignment: 0
+    alignment: 1
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
@@ -274,8 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f89fc2949c6e1647aeb8291cfed873c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trajectoryLenght: 15
-  trajectoryDetail: 10
+  trajectoryLenght: 150
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -295,7 +294,7 @@ MonoBehaviour:
   objectToShoot: {fileID: 5592289504741265612, guid: 535ef3a6ee1aa4233b3e86762b8c5b1e, type: 3}
   maxY: 6
   maxZ: 8
-  aimSpeed: 1.5
+  aimSpeed: 1
   shootPower: 2
 --- !u!1 &248868660
 GameObject:
@@ -513,7 +512,7 @@ LineRenderer:
       m_NumAlphaKeys: 4
     numCornerVertices: 0
     numCapVertices: 0
-    alignment: 0
+    alignment: 1
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
@@ -531,8 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f89fc2949c6e1647aeb8291cfed873c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trajectoryLenght: 15
-  trajectoryDetail: 10
+  trajectoryLenght: 150
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -552,7 +550,7 @@ MonoBehaviour:
   objectToShoot: {fileID: 5592289504741265612, guid: 535ef3a6ee1aa4233b3e86762b8c5b1e, type: 3}
   maxY: 6
   maxZ: 8
-  aimSpeed: 1.5
+  aimSpeed: 1
   shootPower: 2
 --- !u!1 &454057273 stripped
 GameObject:
@@ -860,7 +858,7 @@ LineRenderer:
       m_NumAlphaKeys: 4
     numCornerVertices: 0
     numCapVertices: 0
-    alignment: 0
+    alignment: 1
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
@@ -878,8 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f89fc2949c6e1647aeb8291cfed873c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trajectoryLenght: 15
-  trajectoryDetail: 10
+  trajectoryLenght: 150
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -899,7 +896,7 @@ MonoBehaviour:
   objectToShoot: {fileID: 5592289504741265612, guid: 535ef3a6ee1aa4233b3e86762b8c5b1e, type: 3}
   maxY: 6
   maxZ: 8
-  aimSpeed: 1.5
+  aimSpeed: 1
   shootPower: 2
 --- !u!1 &740968763
 GameObject:
@@ -1655,7 +1652,7 @@ LineRenderer:
       m_NumAlphaKeys: 4
     numCornerVertices: 0
     numCapVertices: 0
-    alignment: 0
+    alignment: 1
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
@@ -1673,8 +1670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f89fc2949c6e1647aeb8291cfed873c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trajectoryLenght: 15
-  trajectoryDetail: 10
+  trajectoryLenght: 150
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -1694,7 +1690,7 @@ MonoBehaviour:
   objectToShoot: {fileID: 5592289504741265612, guid: 535ef3a6ee1aa4233b3e86762b8c5b1e, type: 3}
   maxY: 6
   maxZ: 8
-  aimSpeed: 1.5
+  aimSpeed: 1
   shootPower: 2
 --- !u!1 &1756360003
 GameObject:
@@ -1962,7 +1958,7 @@ LineRenderer:
       m_NumAlphaKeys: 4
     numCornerVertices: 0
     numCapVertices: 0
-    alignment: 0
+    alignment: 1
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
@@ -1980,8 +1976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f89fc2949c6e1647aeb8291cfed873c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trajectoryLenght: 15
-  trajectoryDetail: 10
+  trajectoryLenght: 150
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -2001,7 +1996,7 @@ MonoBehaviour:
   objectToShoot: {fileID: 5592289504741265612, guid: 535ef3a6ee1aa4233b3e86762b8c5b1e, type: 3}
   maxY: 6
   maxZ: 8
-  aimSpeed: 1.5
+  aimSpeed: 1
   shootPower: 2
 --- !u!1001 &2013816579
 PrefabInstance:
@@ -2286,10 +2281,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1736793756, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: aimSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736793757, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: m_Parameters.alignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1736793758, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
       propertyPath: groundIndicator
       value: 
       objectReference: {fileID: 767896722}
+    - target: {fileID: 1736793758, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryDetail
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736793758, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
+      propertyPath: trajectoryLenght
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 6438624852136247305, guid: 6363907c9eb814f758a7fad6c7f90b1d, type: 3}
       propertyPath: m_RootOrder
       value: 3

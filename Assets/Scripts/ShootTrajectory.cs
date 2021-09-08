@@ -6,7 +6,6 @@ using UnityEngine;
 public class ShootTrajectory : MonoBehaviour
 {
     [SerializeField] int trajectoryLenght = 20;
-    [SerializeField] int trajectoryDetail = 10;
     [SerializeField] LayerMask groundMask;
     [SerializeField] GameObject groundIndicator;
 
@@ -41,7 +40,7 @@ public class ShootTrajectory : MonoBehaviour
     {
         Vector3[] results = new Vector3[numberOfPoints];
 
-        float timeStep = trajectoryDetail * Time.fixedDeltaTime / Physics.defaultSolverVelocityIterations;
+        float timeStep = Time.fixedDeltaTime / Physics.defaultSolverVelocityIterations;
 
         Vector3 gravityAccel = Physics.gravity * timeStep * timeStep;
 
